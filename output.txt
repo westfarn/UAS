@@ -1,0 +1,40 @@
+Pictures/crowd.jpg
+(1360, 2048, 3)
+Pictures/ryan_profile.jpg
+(202, 170, 3)
+min_val: -184013808.0
+max_val: 154504864.0
+min_loc: (254, 726)
+max_loc: (165, 692)
+
+
+min_val: -0.596022546291
+max_val: 0.526855707169
+min_loc: (667, 336)
+max_loc: (920, 273)
+
+
+min_val: 253479728.0
+max_val: 2638023168.0
+min_loc: (1370, 843)
+max_loc: (1384, 1158)
+
+
+min_val: 0.420058965683
+max_val: 0.941258609295
+min_loc: (256, 806)
+max_loc: (285, 62)
+
+
+min_val: 304150272.0
+max_val: 1785121920.0
+min_loc: (266, 249)
+max_loc: (257, 769)
+
+
+min_val: 0.146330922842
+max_val: 1.0
+min_loc: (268, 252)
+max_loc: (705, 0)
+
+
