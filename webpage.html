@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Target Locator</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript">
+		var map;
+		function initialize() {
+			
+			var uavLat = 43.0
+			var uavLng = -73.0
+			var uavPosition = new google.maps.LatLng(uavLat, uavLng);
+			//alert(uavPosition);
+			
+			var targetLat = 43.0004141357254
+			var targetLng = -72.99958502166879
+			var targetPosition = new google.maps.LatLng(targetLat, targetLng);
+			//alert(targetPosition);
+			
+			
+		
+		  var mapOptions = {
+			zoom: 15,
+			center: uavPosition,
+		  };
+		  map = new google.maps.Map(document.getElementById('map-canvas'),
+			  mapOptions);
+			  
+			var uavMarker = new google.maps.Marker({
+				position: uavPosition,
+				map: map,
+				title: 'uav',
+			});
+		
+			var uavMarker = new google.maps.Marker({
+				position: targetPosition,
+				map: map,
+				title: 'target',
+			});
+		}
+		
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
