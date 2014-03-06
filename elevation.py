@@ -7,8 +7,10 @@ import simplejson
 import math
 import sys
 import webbrowser
+import os
 
 debug = False
+dir_of_script = 'F:\\GitHub\\UAS'
 
 def is_not_white(rgb):
     return not is_white(rgb)
@@ -238,7 +240,7 @@ def parse_line(text,keyword,value):
 
 def write_webpage(uavPosition,targetPosition,webpage_filename):
     
-    template_filename = 'Template.html'
+    template_filename = os.path.join(dir_of_script,'Template.html')
 
     template = open(template_filename,'r')
     webpage = open(webpage_filename,'w')
@@ -274,6 +276,7 @@ def display_map(uavPosition,targetPosition):
     webbrowser.open_new(webpage_filename)
 
 if __name__ == "__main__":
+    print("HERE")
     test_target = True
     test_picture = False
     filename = 'test.jpg'
